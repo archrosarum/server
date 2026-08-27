@@ -9,7 +9,7 @@ def index():
 
 @app.route('/webhook', methods=['POST'])
 def webhook():
-    subprocess.run(['git', 'pull'], cwd='/path/to/repo')
+    subprocess.run(['git', 'pull'], cwd='/home/andrew/server')
     return '', 200
 
 if __name__ == '__main__':
